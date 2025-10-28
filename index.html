@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SomiSniper - Ultimate Telegram Trading Bot on Somnia</title>
+  <meta name="description" content="Snipe tokens & NFTs on Somnia Chain with zero fees. Telegram-native. Built for degens." />
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #0d0a1a;
+      --card-start: #1a0d3d;
+      --card-end: #2d1b69;
+      --accent: #9d4edd;
+      --highlight: #c77dff;
+      --text: #e6e0ff;
+      --text-light: #d0bdff;
+      --glow: 0 0 15px rgba(157, 78, 221, 0.6);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      font-family: 'Roboto Mono', monospace;
+      line-height: 1.7;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+    }
+
+    .card {
+      background: linear-gradient(145deg, var(--card-start), var(--card-end));
+      border: 1px solid var(--accent);
+      border-radius: 20px;
+      padding: 35px;
+      box-shadow: var(--glow), 0 10px 30px rgba(0, 0, 0, 0.5);
+      color: var(--text);
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--highlight);
+      text-align: center;
+      font-size: 2.4em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 12px var(--accent);
+    }
+
+    h1 span {
+      color: #ffffff;
+      font-size: 1.2em;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 15px 0;
+    }
+
+    .highlight {
+      background: rgba(157, 78, 221, 0.25);
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: var(--highlight);
+      margin: 25px 0 15px;
+      font-size: 1.4em;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: var(--glow);
+    }
+
+    p {
+      margin: 12px 0;
+      color: var(--text-light);
+    }
+
+    ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+      color: var(--text-light);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95em;
+    }
+
+    td {
+      padding: 12px 10px;
+      border-bottom: 1px dashed rgba(157, 78, 221, 0.4);
+      vertical-align: top;
+    }
+
+    td:first-child {
+      color: var(--highlight);
+      font-weight: bold;
+      width: 40%;
+    }
+
+    .btn-group {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 14px 24px;
+      margin: 8px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: all 0.3s ease;
+      box-shadow: var(--glow);
+      min-width: 160px;
+    }
+
+    .btn:hover {
+      background: var(--highlight);
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(199, 125, 255, 0.8);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px dashed var(--accent);
+      color: #b19cd9;
+      font-size: 0.9em;
+    }
+
+    .footer a {
+      color: var(--highlight);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .logo-img {
+      display: block;
+      margin: 20px auto;
+      width: 100px;
+      border-radius: 50%;
+      box-shadow: var(--glow);
+    }
+
+    code {
+      background: rgba(157, 78, 221, 0.2);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Roboto Mono', monospace;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 25px; }
+      h1 { font-size: 2em; }
+      .btn { display: block; width: 80%; margin: 10px auto; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h1>🌀 SomiSniper <span>⚡</span></h1>
+    <p class="subtitle">
+      The <span class="highlight">ultimate Telegram trading bot</span> on <span class="highlight">Somnia Chain</span>
+    </p>
+    <p>
+      Degen traders, snipe any token or NFT — <strong>fast, zero-fee (for Snipers), and fully on-chain.</strong>
+    </p>
+
+    <h2>Why Somnia Chain?</h2>
+    <p>Hyper-scalable, EVM-compatible L1 built for real-time metaverse & gaming.</p>
+    <table>
+      <tr><td>Blazing-fast finality</td><td>< 400ms block times</td></tr>
+      <tr><td>Sub-cent gas fees</td><td>Micro-trading & NFT sniping</td></tr>
+      <tr><td>Native metaverse flow</td><td>Trade in-game assets seamlessly</td></tr>
+      <tr><td>100% EVM compatible</td><td>Use your favorite tools</td></tr>
+    </table>
+
+    <h2>Somi Bot — Coming Soon</h2>
+    <p>Trade tokens & NFTs directly in Telegram.<br>No wallets. No bridges. Just <code>/buy</code>, <code>/sell</code>, <code>/snipe</code>.</p>
+
+    <div class="btn-group">
+      <a href="https://t.me/somisniper" class="btn">Join Telegram</a>
+      <a href="https://x.com/SomiSniper" class="btn">Follow on X</a>
+      <a href="https://github.com/somisniper" class="btn">GitHub</a>
+    </div>
+
+    <h2>1,000 Sniper NFTs Incoming</h2>
+    <p><strong>Mint yours → unlock elite access:</strong></p>
+    <table>
+      <tr><td>0% trading fees</td><td>Forever. Pay nothing.</td></tr>
+      <tr><td>$SNIPER airdrop</td><td>Only for NFT holders</td></tr>
+      <tr><td>Early v2 access</td><td>Limit orders, copy-trade, MEV shield</td></tr>
+    </table>
+
+    <img src="https://pbs.twimg.com/profile_images/1982409374959013888/Xbt4AjMo.jpg" alt="SomiSniper Logo" class="logo-img">
+
+    <p class="footer">
+      <strong>Built for degens. Powered by community.</strong><br>
+      Follow. Mint. Snipe.<br><br>
+      <a href="https://somnia.network">Somnia Network</a> |
+      <a href="https://github.com/somisniper">SomiSniper GitHub</a>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
